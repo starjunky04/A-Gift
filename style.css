@@ -1,0 +1,272 @@
+.background{
+    background-color: rgb(207, 216, 219);
+    height: 2300vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.recordsleeve{
+    position: fixed;
+    /* height: 75vh; */
+    width: 35vw;
+    aspect-ratio: 1;
+    /* margin: auto; */
+    /* top: 12.5vh; */
+    /* margin: ; */
+    /* position: center; */
+    /* left: center; */
+    /* left: 65.625vh; */
+    /* left: 32.8125vw; */
+    /* right: 62.5vh; */
+    
+    z-index: 1;
+    background-image: url(E-cover.svg.png);
+    background-size: contain;
+    /* background-color: red; */
+}
+
+.trigger1, .trigger2, .trigger3, .trigger4, .trigger5, .trigger6, .trigger7{
+    height: 300vh;
+    width: 10vw;
+    position: absolute;
+    visibility: hidden;
+}
+
+ .trigger1{
+    top: 100vh;
+    background-color: red;
+ }
+ .trigger2{
+    top: 400vh;
+    background-color: orange;
+ }
+ .trigger3{
+    top: 700vh;
+    background-color: yellow;
+ }
+ .trigger4{
+    top: 1000vh;
+    background-color: green;
+ }
+ .trigger5{
+    top: 1300vh;
+    background-color: blue;
+ }
+ .trigger6{
+    top: 1600vh;
+    background-color: indigo;
+ }
+
+ .trigger7{
+    top: 1900vh;
+    background-color: violet;
+ }
+
+#vinyl{
+    position: fixed;
+    background-image: url(vinyl-record.png);
+    background-size: contain;
+    border-radius: 2%;
+    width: 35vw;
+    aspect-ratio: 1;
+}
+
+.text1, .text2, .text3, .text4, .text5, .text6, .text7{
+    visibility: hidden;
+    position: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-inline: 1%;
+    z-index: 2;
+    background-color: white;
+    color: black;
+    width: 25vw;
+    font-size: 0.8vw;
+}
+
+.text1{
+    top: 50vh;
+    left: 70vw;
+    opacity: 0;
+}
+
+.text2{
+    top: 30vh;
+    left: -100vw;
+}
+
+.text3{
+    top: -10vh;
+    right: 1vw;
+    visibility: hidden;
+}
+
+.text4{
+    top: 5vh;
+    right: -30vw;
+}
+
+.text5{
+    bottom: 5vh;
+    right: -30vw;
+}
+
+.pinktxt{
+    color: rgb(255, 46, 227);
+    text-decoration: none;
+}
+
+.lyrics{
+    padding: 1%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+    font-size: large;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 20vw;
+    top: 5vh;
+    right: 5vw;
+}
+
+.text5:hover ~ .lyrics{
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 3s;    
+}
+
+.text6{
+    opacity: 0;
+    visibility: hidden;
+    top: 10vh;
+    right: 5vw;
+}
+
+.text6:hover ~ .redtxt{
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 3s;
+}
+.redtxt{
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    font-size: 1.5vw;
+    top: 50vh;
+    right: 5vw;
+    width: 20vw;
+    z-index: 5;
+    padding-inline: 1%;
+}
+
+.text7{
+    visibility: hidden;
+    opacity: 0;
+    top: 8vh;
+    left: 5vw;
+}
+
+.poster, .sticker{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    /* bottom: 5vh; */
+    width: 25vw;
+    height: 100%;
+    bottom: 10vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* background-position:; */
+    /* border-color: rgb(0, 0, 0);
+    border-width: 2vw; */
+    border: 20px black;
+    /* background-color: black; */
+    /* padding: 0.2%; */
+}
+.sticker{
+    /* bottom: -10vh; */
+    left: 5vw;
+    background-image: url(sticker.jpg);
+}
+
+.stickertxt{
+    visibility: hidden;
+    left: 5vw;
+    color: white;
+    position: fixed;
+    bottom: 10vh;
+    font-size: large;
+    background-color: black;
+    width: 25vw;
+}
+
+.sticker:hover ~ .stickertxt{
+    visibility: visible;
+    /* background-image: ; */
+    /* background-color: black; */
+}
+
+.poster{
+    right: 5vw;
+
+    /* max-height: fit-content; */
+    /* height: 100%; */
+    background-image: url(poster.webp);
+}
+
+.postertxt{
+    visibility: hidden;
+    right: 5vw;
+    color: white;
+    position: fixed;
+    bottom: 10vh;
+    font-size: large;
+    background-color: black;
+    width: 25vw;
+}
+
+.poster:hover ~ .postertxt{
+    visibility: visible;
+    /* background-image: ; */
+    /* background-color: black; */
+}
+
+
+
+
+
+/* .text2::after{
+    content: "One of my closest friends introduced me to this album";
+    padding-inline: 1%;
+    z-index: 2;
+    width: 25vw;
+    font-weight: 300;
+    font-size: 200%;
+}
+
+.text2:hover::after{
+    content: "It's a really good album";
+    padding-inline: 1%;
+    z-index: 2;
+    width: 25vw;
+    font-weight: 300;
+    font-size: 200%;
+} */
+
+
+
+.text1:hover, .text2:hover, .text3:hover, .text4:hover, .text5:hover, .text6:hover, .text7:hover{
+    color: white;
+    background-color: black;
+    transition-duration: 1s;
+}
